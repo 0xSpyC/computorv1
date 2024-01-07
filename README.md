@@ -17,7 +17,7 @@ To install `computorv1`, follow these steps:
    git clone https://github.com/0xSpyC/computorv1.git
    cd computorv1
    cargo build --release
-   cd target/debug
+   cd target/release
    ```
 ## Usage
 
