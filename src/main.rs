@@ -10,7 +10,7 @@ use clap::{Arg, Command};
 use polynomial::Polynomial;
 
 fn main() {
-    let matches = Command::new("computorv1") // requires `cargo` feature
+    let matches = Command::new("computorv1")
         .version("0.1.0")
         .author("Reda Tazlaoui <rtazlaou@student.42mulhouse.fr>")
         .about("Polynomial Solver")
