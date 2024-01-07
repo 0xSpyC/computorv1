@@ -1,5 +1,7 @@
 # computorv1
 
+The goal of this project is to get acquainted with handling elementary math tools that may be helpful for other 42 projects. You will not “do math for doing math”, but to develop a progressive and relaxed approach to projects where these tools are needed.
+
 `computorv1` is a polynomial equation solver that efficiently handles linear and quadratic equations. It utilizes the Logos Lexer for lexical analysis and Clap for command-line argument parsing, ensuring a seamless and user-friendly experience.
 
 ## Installation
