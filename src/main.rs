@@ -4,11 +4,9 @@
 //   By: 0xSpyC <rtazlaou@student.42mulhouse.fr>         |..>..... .......|
 //                                                       |@........4......|
 //   Created: 2024/01/05 17:05:11 by 0xSpyC              |....@.8...@.....|
-//   Updated: 2024/01/07 18:17:59 by 0xSpyC              |........@.......|
+//   Updated: 2024/01/07 19:13:30 by 0xSpyC              |........@.......|
 
-extern crate polynomial;
 use clap::{Arg, Command};
-
 use polynomial::Polynomial;
 
 fn main() {
@@ -23,14 +21,13 @@ fn main() {
         )
         .get_matches();
 
-    let polynome_parse =
-        Polynomial::from_str(matches.get_one::<String>("polynomial").unwrap().as_str());
+    let equation: &str = matches.get_one::<String>("polynomial").unwrap().as_str();
+    let polynome_parse = Polynomial::from_str(equation);
     match polynome_parse {
         Ok(mut polynome) => {
             polynome.reduce();
             polynome.display();
-            let result = polynome.solve();
-            match result {
+            match polynome.solve() {
                 Ok(()) => {}
                 Err(e) => eprintln!("{}", e.message()),
             }
