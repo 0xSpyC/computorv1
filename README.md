@@ -45,6 +45,19 @@ This command will output the solution to the specified quadratic equation.
   ```
 
 This will execute all tests defined in the project, verifying the functionality of various components including the polynomial solver, Logos Lexer, polynomial parser.
-Specific tests are : polynomial, tokenize, parsing 
+Specific tests are : polynomial, tokenize, parsing
+
+## Mandatory
+
+- [x] • The equation in its reduced form.
+- [x] • The degree of the equation.
+- [x] • Its solution(s) and the polarity of the discriminant if it makes sense.
+
+## Bonus
+
+- [x] • Manage entry mistakes (vocabulary and syntax).
+- [x] • Manage free form entrie.
+- [x] • Display solution(s) as an irreducible fraction if it’s interesting.
+- [x] • Display the intermediate steps.
 
 For further information or if you encounter any issues submit an issue on the GitHub repository.
